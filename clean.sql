@@ -1,6 +1,6 @@
 START TRANSACTION;
 
-INSERT INTO etf_trades
+INSERT INTO etf.etf_trades
 (SELECT 
     elem ->> 'symbol' AS symbol,
     elem ->> 'name' AS name,
